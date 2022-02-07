@@ -1,0 +1,22 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    color:rgb(98, 187, 175);
+    font-weight: 900;
+}
+
+h4{
+    color:grey;
+    font-weight: 300;
+}
+
+h6{
+    color:grey;
+    font-weight: 200;
+}
+p{
+    font-weight: 400;
+    line-height: 1.5em;
+}
