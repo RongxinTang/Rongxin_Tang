@@ -1,0 +1,54 @@
+/* mobile first */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: antiquewhite;
+}
+
+header,footer,main {
+    padding: 20px;
+    border: 1px solid #000000;
+    color: #141414;
+}
+
+p {
+    line-height: 1.68em;
+    padding: 10px;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+
+}
+
+
+header, footer {
+    line-height: 60px;
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+@media (min-width: 960px){
+    .container {
+        flex-direction: row;
+    }
+    
+}
