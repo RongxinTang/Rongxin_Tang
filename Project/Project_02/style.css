@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #8d7a69;
+}
+
+.container{
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.option {
+    padding-bottom: 50px;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+}
+
+p{
+    width: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+
+a:link{
+    color:#8d7a69;
+}
+
+a:visited{
+    color:#8d7a69;
+}
+
+a:hover{
+    background-color: #635446;
+    color:white;
+}
