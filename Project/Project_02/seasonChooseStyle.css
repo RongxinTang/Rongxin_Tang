@@ -86,18 +86,7 @@ li:hover .season_option {
     opacity: 1;
 }
 
-.back a:link{
-    color: #8d7a69;
-    border: 2px solid #8d7a69;
-    padding: 0px 10px;
-    margin: 150px;
-}
 
-.back a:hover{
-    background-color: #8d7a69;
-    padding: 0px 10px;
-    margin: 150px;
-}
 
 
 a:link{
@@ -130,6 +119,18 @@ a:visited{
     color:#a1bbc8;
 }
 
+.back a:link{
+    color: black;
+    border: 2px solid black;
+    padding: 0px 10px;
+    margin: 150px;
+}
+
+.back a:hover{
+    background-color: #8d7a69;
+    padding: 0px 10px;
+    margin: 150px;
+}
 
 
 
