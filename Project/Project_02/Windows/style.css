@@ -12,7 +12,7 @@ html, body {
 }
 
 .flex_container {
-    margin: 0 15%;
+    margin: 0 20%;
 }
 
 .spring {
@@ -33,37 +33,106 @@ h2 {
 }
 
 
-ul {
+.nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
     list-style-type: none;
-    margin: 50px;
-    padding: 10px;
-    background-color: white;
+    margin: 30px 0px;
+    line-height: 35px;
+
 }
 
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
 
-li {
+a.spring_nav, a.summer_nav, a.autumn_nav, a.winter_nav {
     width: auto;
     align-content: center;
     text-align: center;
+    padding: 0 30px;
 }
+
+a.spring_nav:link, a.spring_nav:visited {
+    color: #a4c1a8;
+    text-decoration: none;
+}
+
+a.spring_nav:hover{
+    background-color: #a4c1a8;
+    transition: background-color 1s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+
+a.summer_nav:link, a.summer_nav:visited {
+    color: #507d5c;
+    text-decoration: none;
+}
+
+a.summer_nav:hover{
+    background-color: #507d5c;
+    transition: background-color 1s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+
+a.autumn_nav:link, a.autumn_nav:visited {
+    color: #f4b13e;
+    text-decoration: none;
+}
+
+a.autumn_nav:hover{
+    background-color: #f4b13e;
+    transition: background-color 1s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+
+a.winter_nav:link, a.winter_nav:visited {
+    color: #a1bbc8;
+    text-decoration: none;
+}
+
+a.winter_nav:hover{
+    background-color: #a1bbc8;
+    transition: background-color 1s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+
+
 
 
 
 .image img {
     display: block;
     width: 100%;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
-    object-position: 0% 50%;
+    object-position: 50% 60%;
     margin: 60px auto 30px auto;
 }
 
-a.summer_link:link,  a.summer_link:visited{
+.image video {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 60%;
+    margin: 60px auto 30px auto;
+}
+
+
+a.summer_link:link, a.summer_link:visited, a.autumn_link:link,  a.autumn_link:visited, a.winter_link:link,  a.winter_link:visited{
     color: white;
     text-decoration:underline;
 }
@@ -71,5 +140,15 @@ a.summer_link:link,  a.summer_link:visited{
 a.summer_link:hover {
     background-color: white;
     color: #507d5c;
+}
+
+a.autumn_link:hover {
+    background-color: white;
+    color: #f4b13e;
+}
+
+a.winter_link:hover {
+    background-color: white;
+    color: #a1bbc8;
 }
 
