@@ -27,6 +27,18 @@ html, body {
     background-color: #507d5c;
 }
 
+.autumn {
+    height: 100%;
+    width: 100%;
+    background-color: #f4b13e;
+}
+
+.winter {
+    height: 100%;
+    width: 100%;
+    background-color: #a1bbc8;
+}
+
 h2 {
     text-align: center;
     padding: 10px;
@@ -152,3 +164,23 @@ a.winter_link:hover {
     color: #a1bbc8;
 }
 
+.back a:link, .back a:visited{
+    color: white;
+    border: 2px solid white;
+    padding: 0px 10px;
+    margin: 150px;
+}
+
+.back a:hover{
+    background-color: #8d7a69;
+    color: white;
+    border: 2px solid #8d7a69;
+    padding: 0px 10px;
+    margin: 150px;
+}
+
+p{
+    width: auto;
+    text-align: center;
+    padding: 10px;
+}
