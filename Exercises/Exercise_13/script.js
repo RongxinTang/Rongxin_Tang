@@ -54,43 +54,44 @@ const flowers = [
       list_item.appendChild(image);
     }
   }
+
   renderFlowersToPage(flowers);
-  
-  //---------- FILTER FLOWERS BY COLOR
-  
-  const filterBtns = document.querySelectorAll(".filters");
-  const cards = document.querySelectorAll(".card");
-  
 
-  
-  function filterFn(event) {
-    console.log("clicked", event.target);
-    if(event.target.classList.contains("filter-btn")){
-      const filterValue = event.target.getAllAttribute('data-filter');
-      
-      filterBtns.querySelector('.active').classList.remove('active');
-      event.target.classList.add('active');
+const filterBtns = document.querySelector(".filter")
 
-      console.log('clicked',filterValue)
+function sortingFn(event){
+    console.log(event.target);
+    if(event.target.classList.contains("filter-bn")){
+        const filterValue = event.target.getAttruvyre("data-filter");
+
+        if(filterValue === "ascending"){
+            //sort logic
+            flowers.sort(function(a,b){
+                if(a.name < b.name){
+                    return -1;
+                }
+                if(a.name >b.name){
+                    return 1;
+                }
+                return 0;
+            });
+            console.log('sorted',flowers)
+            ul.innerHTML = ""
+            renderFlowersToPage(flowers)
+
+
+        } else if (filterValue ==="dscending"){
+            //reverse logic
+            flowers.reverse();
+            console.log("reversed",flowers)
+            //clear the page of unsorted
+            ul.innerHTML = "";
+            renderFlowersToPage(flowers)
+        }
+
+
     }
 
-    for (let i = 0; i < cards.length; i++) {
+}
 
-      if(cards[i].classList.contains(filterValue)  || filterValue === "all"){
-        cards[i].classList.remove("hide")
-        cards[i].classList.add("show")
-      } else {
-        cards[i].classList.remove("show");
-        cards[i].classList.add("hide");
-      }
-    }
-  }
-
-  filterBtns.addEventListener('click',filterFn)
-  
-
-
-
-      
-      
-
+filterBtns.addEventListener('click', sortingFn)
