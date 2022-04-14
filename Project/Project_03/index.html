@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a06757b4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><strong>PATTERN GALLERY</strong></h1>
+    </header>
+
+    <main>
+        <section class="nav">
+            <div class="searchBar">
+                <form action="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="">
+                </form>   
+            </div>
+            <br>
+
+            <div class="filter">
+                <p>Filter By</p>
+                <button type="button" class="collapsible">TYPE</button>
+                <ul class="filterColl">
+                    <li>Edible Fungi</li>
+                    <li>Foliage</li>
+                    <li>Food</li>
+                    <li>Sky</li>
+                    <li>Wall</li>
+                </ul>
+
+                <button type="button" class="collapsible">COLOR</button>
+                <ul class="filterColl">
+                    <li>Blue</li>
+                    <li>Green</li>
+                    <li>Grey</li>
+                    <li>Red</li>
+                    <li>Yellow</li>
+                </ul>
+                
+            </div>
+
+        </section>
+
+
+        <section class="content">
+            <ul class="cardContainer"></ul>
+        </section>
+
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
