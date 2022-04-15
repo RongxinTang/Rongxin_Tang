@@ -124,18 +124,21 @@ renderMaterialToPage(materials);
 
 //filter by type and color
 
-let filterBtns = document.querySelectorAll(".filterContainer");
+let typeFilter = document.querySelector(".typeFilter");
 let cards = document.querySelectorAll(".card");
 
 function filterFn(event) {
+    //console.log("clicked", event.target);
     if (event.target.classList.contains("filter-btn")){
-        filterBtns.querySelector(".active").classList.remove("active");
+        typeFilter.querySelector(".active").classList.remove("active");
 
         event.target.classList.add("active");
 
-        const filterValue = event.target.getAttributes("data-filter");
+        const filterValue = event.target.getAttribute("data-filter");
+        console.log(filterValue)
 
         for (let i = 0; i < cards.length; i++) {
+            //console.log(cards[i].classList);
             if (cards[i].classList.contains(filterValue) || filterValue === "all"){
                 cards[i].classList.remove("hide");
                 cards[i].classList.add("show");
@@ -147,4 +150,4 @@ function filterFn(event) {
     }
 }
 
-filterBtns.addEventListener("click", filterFn);
+typeFilter.addEventListener("click", filterFn);
