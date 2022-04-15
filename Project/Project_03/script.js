@@ -20,49 +20,49 @@ const materials = [
     },
     {
         name: "Cracked Mud Wall",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Khaki",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909282/Materials%20in%20my%20city/IMG_8097_pw1vro.jpg",
     },
     {
         name: "Two-color Brick Wall",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Grey",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909280/Materials%20in%20my%20city/IMG_8096_st8ace.jpg",
     },
     {
         name: "Brick Wall",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Grey",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909275/Materials%20in%20my%20city/IMG_8091_swtgu4.jpg",
     },
     {
         name: "Plank",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Grey",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909268/Materials%20in%20my%20city/IMG_8095_yal9vz.jpg",
     },
     {
         name: "Wooden Door",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Red",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909266/Materials%20in%20my%20city/IMG_8094_quwkfq.jpg",
     },
     {
         name: "Mud Wall",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Khaki",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909265/Materials%20in%20my%20city/IMG_8085_rekady.jpg",
     },
     {
         name: "Red Plank",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Red",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909259/Materials%20in%20my%20city/IMG_8105_ay3mo7.jpg",
     },
     {
         name: "Iron Gate",
-        type: "Wall",
+        type: "BuildingMaterials",
         color: "Red",
         image: "https://res.cloudinary.com/drvfsh5ig/image/upload/v1649909251/Materials%20in%20my%20city/IMG_4792_m7ow2h.jpg",
     },
@@ -122,6 +122,29 @@ function renderMaterialToPage(materials) {
 renderMaterialToPage(materials);
 
 
-//filter by type
+//filter by type and color
 
-let typeFilter = document.querySelector(".")
+let filterBtns = document.querySelectorAll(".filterContainer");
+let cards = document.querySelectorAll(".card");
+
+function filterFn(event) {
+    if (event.target.classList.contains("filter-btn")){
+        filterBtns.querySelector(".active").classList.remove("active");
+
+        event.target.classList.add("active");
+
+        const filterValue = event.target.getAttributes("data-filter");
+
+        for (let i = 0; i < cards.length; i++) {
+            if (cards[i].classList.contains(filterValue) || filterValue === "all"){
+                cards[i].classList.remove("hide");
+                cards[i].classList.add("show");
+            } else {
+                cards[i].classList.remove("show");
+                cards[i].classList.add("hide");
+            }
+        }
+    }
+}
+
+filterBtns.addEventListener("click", filterFn);

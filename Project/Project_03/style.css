@@ -39,9 +39,6 @@ section {
 }
 
 
-li {
-    list-style-type: none;
-}
 
 img {
     display: block;
@@ -55,7 +52,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 10%;
+    width: 13%;
 }
 
 form {
@@ -106,6 +103,7 @@ input:focus~label {
     flex-direction: column;
 }
 
+
 .collContent {
     display: none;
     font-size: 14px;
@@ -116,15 +114,21 @@ input:focus~label {
 button {
     background-color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
     text-decoration: underline;
     border: 0ch;
     margin: 10px;
-}
-
-.collapasible {
     cursor: pointer;
 }
+
+button.collapsible {
+    font-size: 16px;
+}
+
+button.filter-btn {
+    line-height: 160%;
+    display: block;
+}
+
 
 .active, .collapsible:hover {
     background-color: black;
@@ -136,14 +140,14 @@ button {
 
 .cardContainer {
     display: grid;
-    grid-template-columns: repeat(6, 160px);
-    grid-auto-rows: 160px;
+    grid-template-columns: repeat(8, 130px);
+    grid-auto-rows: 130px;
     grid-gap: 10px;
 }
 
 @media (max-width: 960px){
     .cardContainer{
-        grid-template-columns: repeat(5, 160px);
+        grid-template-columns: repeat(6, 130px);
     }
 }
 
@@ -155,8 +159,8 @@ button {
 
 
 .description {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     position: absolute;
     visibility: hidden;
     color: white;
