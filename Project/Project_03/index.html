@@ -15,6 +15,12 @@
 <body>
     <header>
         <h1><strong>PATTERN GALLERY</strong></h1>
+        <br>
+        <p><strong>Materials in my city</strong></p>
+        <p><a href="https://www.google.com/maps/@26.4176792,103.2908884,3274m/data=!3m1!1e3" target="_blank">Huize</a>
+             | <a href="https://www.google.com/maps/@25.4920921,103.7906644,2775m/data=!3m1!1e3" target="_blank">Qujing</a>
+              | <a href="https://www.google.com/maps/@29.5661828,106.4666133,2280m/data=!3m1!1e3" target="_blank">Chongqing</a>
+               | <a href="https://www.google.com/maps/@40.8000347,-73.9630032,2040m/data=!3m1!1e3" target="_blank">New York</a> </p>
     </header>
 
     <main>
@@ -22,30 +28,36 @@
             <div class="searchBar">
                 <form action="">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="">
+                    <input type="text" id="search">
+                    <label for="search">Search...</label>
                 </form>   
             </div>
             <br>
 
             <div class="filter">
                 <p>Filter By</p>
-                <button type="button" class="collapsible">TYPE</button>
-                <ul class="filterColl">
-                    <li>Edible Fungi</li>
-                    <li>Foliage</li>
-                    <li>Food</li>
-                    <li>Sky</li>
-                    <li>Wall</li>
-                </ul>
 
-                <button type="button" class="collapsible">COLOR</button>
-                <ul class="filterColl">
-                    <li>Blue</li>
-                    <li>Green</li>
-                    <li>Grey</li>
-                    <li>Red</li>
-                    <li>Yellow</li>
-                </ul>
+                <div>
+                    <button type="button" class="collapsible"><strong>TYPE</strong></button>
+                    <ul class="collContent">
+                        <li>Edible Fungi</li>
+                        <li>Foliage</li>
+                        <li>Food</li>
+                        <li>Sky</li>
+                        <li>Wall</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible"><strong>COLOR</strong></button>
+                    <ul class="collContent">
+                        <li>Blue</li>
+                        <li>Green</li>
+                        <li>Grey</li>
+                        <li>Red</li>
+                        <li>Yellow</li>
+                    </ul>
+                </div>
                 
             </div>
 
