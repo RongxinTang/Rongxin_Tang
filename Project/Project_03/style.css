@@ -38,6 +38,19 @@ section {
     margin: 20px;
 }
 
+footer {
+    margin: 50px;
+    font-size: 6px;
+    text-align: center;
+
+}
+
+img.logo {
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 img {
@@ -52,7 +65,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 13%;
+    width: 200px;
 }
 
 form {
@@ -156,6 +169,10 @@ button.filter-btn {
     display: block;
 }
 
+.card.hide {
+    display: none;
+}
+
 
 
 .description {
@@ -165,28 +182,48 @@ button.filter-btn {
     visibility: hidden;
     color: white;
     padding: 10px;
-    opacity: 1;
 }
 
 .card:hover .description {
     visibility: visible;
-    opacity: 0.8;
 }
 
 .Green {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.6);
 }
 
 .Red {
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0.6);
 }
 
 .Khaki {
-    background-color: darkgoldenrod;
+    background-color: rgba(184, 135, 11, 0.6);
 }
 
 .Grey {
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.6);
 }
 
+.Beige {
+    background-color: rgba(245, 222, 179, 0.6);
+}
 
+.Orange {
+    background-color: rgba(244, 165, 96, 0.6);
+}
+
+.Purple {
+    background-color: rgba(147, 112, 216, 0.6);
+}
+
+.Pink {
+    background-color: rgba(255, 182, 193, 0.6);
+}
+
+.Blue {
+    background-color: rgba(135, 207, 235, 0.6);
+}
+
+.Brown {
+    background-color: rgba(210, 105, 30, 0.6);
+}
