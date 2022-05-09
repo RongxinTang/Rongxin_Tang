@@ -23,7 +23,7 @@ html, body {
 }
 
 .option {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 h1{
@@ -49,6 +49,22 @@ a:visited{
 a:hover{
     background-color: #635446;
     color:white;
+}
+
+.home a:link, .back a:visited{
+    color: #8d7a69;
+    border: 2px solid #8d7a69;
+    padding: 0px 10px;
+    margin: 150px;
+    text-decoration: none;
+}
+
+.home a:hover{
+    background-color: #8d7a69;
+    color: white;
+    padding: 0px 10px;
+    margin: 150px;
+    text-decoration: none;
 }
 
 

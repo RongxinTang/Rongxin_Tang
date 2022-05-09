@@ -1,7 +1,6 @@
 body{
     background-color: rgb(238, 245, 241);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 150px 300px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,3 +23,25 @@ a:visited{
 a:hover{
     color:cadetblue;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.projects {
+    margin-right: 100px;
+    border: 2px solid cadetblue;
+    border-radius: 20px;
+    box-shadow: 3px 6px cadetblue;
+    padding: 15px 30px;
+}
+
+.exercises {
+    border: 2px solid cadetblue;
+    border-radius: 20px;
+    box-shadow: 3px 6px cadetblue;
+    padding: 15px 30px;
+}
+
