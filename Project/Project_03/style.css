@@ -212,7 +212,7 @@ button.filter-btn {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     main {
         flex-direction: column;
     }
